@@ -27,7 +27,7 @@ class FoodsController extends Controller
     public function index()
     {
 
-        return Food::all();
+        return Food::all()->sortBy("created_at");
     }
 
     /**
@@ -61,8 +61,8 @@ class FoodsController extends Controller
       $food->name = $request->input('name');
       $food->description = $request->input('description');
       $food->image = $request->input('image');
-      //$food->save();
-      return  $request->input('name');
+      $food->save();
+      return  $food;
 
      /*
       response(

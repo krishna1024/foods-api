@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::resource('/foods','FoodsController');
-Route::resource('/menus','MenuController');
+Route::resource('/api/foods','FoodsController');
+Route::resource('/api/menus','MenuController');
