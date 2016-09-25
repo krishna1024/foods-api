@@ -15,6 +15,9 @@ import  thunk  from 'redux-thunk';
 import { Provider } from 'react-redux';
 import FoodsList from '../foods/FoodsList.js';
 import AddFood from '../addFoods/AddFood.js';
+import CateringMenuContainer from '../catering/CateringMenuContainer.js';
+import CustomizeMenuContainer from '../catering/CustomizeMenuContainer.js';
+import CheckoutContainer from '../checkout/CheckoutContainer.js';
 
 let store = createStore(foodsAppReducer, applyMiddleware(thunk) );
 store.subscribe(()=> { console.log(store.getState()) } );
@@ -27,7 +30,9 @@ const AppRoutes =
             <IndexRoute component={ FoodsList } ></IndexRoute>
             <Route path='add' component={ AddFood } ></Route>
             <Route path='foods' component={ FoodsList } ></Route>
-            <Route path='menus' component={ AddFood } ></Route>
+            <Route path='menus' component={ CateringMenuContainer } ></Route>
+            <Route path='customize' component={ CustomizeMenuContainer } ></Route>
+            <Route path='checkout' component={ CheckoutContainer } ></Route>
           </Route>
         </Router>
         </Provider>

@@ -8,7 +8,7 @@ function foodsAppReducer(state,action) {
       foodsList: action
     })
     return nextState;
-  },
+  }
   if( action.type === 'add-food' ) {
       const nextState = Object.assign( { } , state , {
           page: action
