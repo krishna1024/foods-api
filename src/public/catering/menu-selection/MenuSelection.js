@@ -1,8 +1,13 @@
 import React from 'react'
-export default class MenuSelection extends React.Component {
+export default className MenuSelection extends React.Component {
 
     render() {
-        return <section></section>;
+        return (
+             <section>
+                 Select Menu
+                 <a href="#/catering/customize" >Customize</a>
+             </section>
+        );
     }
 
 }

@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import Search from './Search.js'
+import Finish from './Finish.js'
 
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -14,9 +14,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 };
 
 
-const SearchContainer = connect(
+const FinishContainer = connect(
     mapStateToProps,
     mapDispatchToProps
-)(Search);
+)(Finish);
 
-export default SearchContainer;
+export default FinishContainer;

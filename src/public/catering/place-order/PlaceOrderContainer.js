@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import Search from './Search.js'
+import PlaceOrder from './PlaceOrder.js'
 
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -14,9 +14,10 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 };
 
 
-const SearchContainer = connect(
+const PlaceOrderContainer = connect(
     mapStateToProps,
     mapDispatchToProps
-)(Search);
+)(PlaceOrder);
 
-export default SearchContainer;
+export default PlaceOrderContainer;
+

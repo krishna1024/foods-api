@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default class AddFood extends React.Component {
+export default className AddFood extends React.Component {
 
 }

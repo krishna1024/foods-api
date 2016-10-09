@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class Catering extends React.Component {
+export default className Catering extends React.Component {
 
 }
 

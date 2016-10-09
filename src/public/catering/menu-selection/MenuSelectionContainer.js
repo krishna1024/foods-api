@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import Search from './Search.js'
+import MenuSelection from './MenuSelection.js'
 
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -14,9 +14,10 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 };
 
 
-const SearchContainer = connect(
+const MenuSelectionContainer = connect(
     mapStateToProps,
     mapDispatchToProps
-)(Search);
+)(MenuSelection);
 
-export default SearchContainer;
+export default MenuSelectionContainer;
+

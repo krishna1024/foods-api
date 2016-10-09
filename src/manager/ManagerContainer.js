@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import Search from './Search.js'
+import Manager from './Manager.js'
 
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -14,9 +14,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 };
 
 
-const SearchContainer = connect(
+const ManagerContainer = connect(
     mapStateToProps,
     mapDispatchToProps
-)(Search);
+)(Manager);
 
-export default SearchContainer;
+export default ManagerContainer;
