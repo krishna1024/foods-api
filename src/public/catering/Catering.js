@@ -1,6 +1,6 @@
 import React from 'react'
 import WizardBreadCrumb from './components/WizardBreadCrumb.js'
-export default className Catering extends React.Component {
+export default class Catering extends React.Component {
 
     constructor(props){
         super(props);
@@ -17,6 +17,7 @@ export default className Catering extends React.Component {
 
     render() {
         return (
+          <div className="container main-container">
             <section>
                 <header>
                     <WizardBreadCrumb
@@ -35,6 +36,7 @@ export default className Catering extends React.Component {
                     { this.props.children }
                 </div>
             </section>
+            </div>
         );
     }
 

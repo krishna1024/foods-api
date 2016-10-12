@@ -8,7 +8,7 @@ export default class Public extends React.Component {
         return (
             <div>
                 <header>
-                    <Navbar/>
+                    <Navbar title="Foods"/>
                 </header>
                   <div>
                       { this.props.children }

@@ -1,5 +1,5 @@
 import React from 'react'
-export default className Intro extends React.Component {
+export default class Intro extends React.Component {
 
     render() {
         return (

@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import Catering from './Catering.js'
+import ManageOrders from './ManageOrders.js'
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -14,10 +14,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 };
 
 
-const CateringContainer = connect(
+const ManageOrdersContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Catering);
+)(ManageOrders);
 
-export default CateringContainer;
-
+export default ManageOrdersContainer;

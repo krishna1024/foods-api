@@ -1,15 +1,16 @@
+import "materialize-loader";
 import React from 'react'
 import ReactDom from 'react-dom'
-
 import { createFoodStore } from './initial.js'
 import { Provider } from 'react-redux'
 import { Router, Route, hashHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 import PublicRoutes from './public/Routes.js'
 import ManagerRoutes from './manager/Routes.js'
-
+import "./main.scss"
 const store = createFoodStore();
-const history = syncHistoryWithStore(hashHistory, store)
+const history = syncHistoryWithStore(hashHistory, store);
+
 
 ReactDom.render(
     <Provider store={store} >

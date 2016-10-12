@@ -3,7 +3,7 @@ export default class Welcome extends React.Component {
 
   render() {
     return (
-      <nav className="orange" role="navigation">
+      <nav className="green" role="navigation">
         <div className="nav-wrapper container main-container">
           <a id="logo-container" href="#" className="brand-logo">
             <i className="material-icons">restaurant</i> { this.props.title }
