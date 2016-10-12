@@ -7,7 +7,8 @@ module.exports = {
   context: path.join(__dirname, ''),
   output: {
    path: path.join(__dirname, 'public'),
-   filename: 'bundle.js'
+   filename: 'bundle.js',
+   publicPath: "http://localhost:8000/",
   },
   module: {
     loaders: [
@@ -33,17 +34,13 @@ module.exports = {
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader:"url?limit=10000&mimetype=application/font-woff"
+        loader:"url?limit=10000&mimetype=application/font-woff$"
       },
       {
          test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
          loader: "file"
-      }
+      },
+
     ]
-  },
-sassLoader: {
- includePaths: [
-   path.resolve(__dirname, "./node_modules/materialize-css/sass")
- ]
-}
+  }
 };
