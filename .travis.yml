@@ -16,4 +16,4 @@ env:
     - "FTP_USER=user"
     - "FTP_PASSWORD=password"
 after_success:
-    "curl -T public/**/*.* -u $FTP_USER:$FTP_PASSWORD ftp://www.chromix.in/demos/foods"
+    "curl -T public/ -u $FTP_USER:$FTP_PASSWORD ftp://www.chromix.in/demos/foods"
