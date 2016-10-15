@@ -11,3 +11,9 @@ before_script:
 
 script:
   - vendor/bin/phpunit
+env:
+  global:
+    - "FTP_USER=user"
+    - "FTP_PASSWORD=password"
+after_success:
+    "curl -T index.html -u $FTP_USER:$FTP_PASSWORD ftp://wecodetheweb.com/public_html/"
