@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import ManageOrders from './ManageOrders.js'
+import ViewOrderDetails from './ViewOrderDetails.js'
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -14,9 +14,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 };
 
 
-const ManageOrdersContainer = connect(
+const ViewOrderDetailsContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(ManageOrders);
+)(ViewOrderDetails);
 
-export default ManageOrdersContainer;
+export default ViewOrderDetailsContainer;

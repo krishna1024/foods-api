@@ -1,5 +1,5 @@
 import React from 'react'
-export default class ManageOrders extends React.Component {
+export default class ViewOrderDetails extends React.Component {
 
   render() {
     return <section>
@@ -7,6 +7,7 @@ export default class ManageOrders extends React.Component {
         <div className="col s12 m12">
           <div className="card">
             <div className="card-content">
+              <div>Order details</div>
             </div>
           </div>
         </div>

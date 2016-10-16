@@ -1,4 +1,5 @@
 import React from 'react'
+import Table from '../../../components/Table.js'
 export default class ManageOrders extends React.Component {
 
   render() {
@@ -8,32 +9,80 @@ export default class ManageOrders extends React.Component {
           <div className="card">
             <div className="card-content" >
             <span className="card-title">Card Title</span>
-            <table className="bordered" >
-              <thead>
-              <tr>
-                <th data-field="id">Name</th>
-                <th data-field="name">Item Name</th>
-                <th data-field="price">Item Price</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>Alvin</td>
-                <td>Eclair</td>
-                <td>$0.87</td>
-              </tr>
-              <tr>
-                <td>Alan</td>
-                <td>Jellybean</td>
-                <td>$3.76</td>
-              </tr>
-              <tr>
-                <td>Jonathan</td>
-                <td>Lollipop</td>
-                <td>$7.00</td>
-              </tr>
-              </tbody>
-            </table>
+              <Table
+                headers = {[
+                 { name: 'Order number' },
+                 { name: 'Placed on' },
+                 { name: 'Delivered on' },
+                 { name: 'Total Bill' },
+                 { name: 'Status' }
+                ]}
+
+                rows = {[
+                 { cells: [
+                   { text: '3699', link: '#/manager/catering/orders/3699' },
+                   { text: '18-12-2016' },
+                   { text: '18-12-2016' },
+                   { text: '$8400' },
+                   { text: 'Delivered' }
+                 ] },{ cells: [
+                    { text: '3699' , link: '#/manager/catering/orders/3699'},
+                    { text: '18-12-2016' },
+                    { text: '18-12-2016' },
+                    { text: '$8400' },
+                    { text: 'Delivered' }
+                  ] },{ cells: [
+                    { text: '3699' , link: '#/manager/catering/orders/3699'},
+                    { text: '18-12-2016' },
+                    { text: '18-12-2016' },
+                    { text: '$8400' },
+                    { text: 'Delivered' }
+                  ] },{ cells: [
+                    { text: '3699' , link: '#/manager/catering/orders/3699'},
+                    { text: '18-12-2016' },
+                    { text: '18-12-2016' },
+                    { text: '$8400' },
+                    { text: 'Delivered' }
+                  ] },{ cells: [
+                    { text: '3699' , link: '#/manager/catering/orders/3699'},
+                    { text: '18-12-2016' },
+                    { text: '18-12-2016' },
+                    { text: '$8400' },
+                    { text: 'Delivered' }
+                  ] },{ cells: [
+                    { text: '3699' , link: '#/manager/catering/orders/3699'},
+                    { text: '18-12-2016' },
+                    { text: '18-12-2016' },
+                    { text: '$8400' },
+                    { text: 'Delivered' }
+                  ] },{ cells: [
+                    { text: '3699' , link: '#/manager/catering/orders/3699' },
+                    { text: '18-12-2016' },
+                    { text: '18-12-2016' },
+                    { text: '$8400' },
+                    { text: 'Delivered' }
+                  ] },{ cells: [
+                    { text: '3699' , link: '#/manager/catering/orders/3699' },
+                    { text: '18-12-2016' },
+                    { text: '18-12-2016' },
+                    { text: '$8400' },
+                    { text: 'Delivered' }
+                  ] },{ cells: [
+                    { text: '3699' , link: '#/manager/catering/orders/3699' },
+                    { text: '18-12-2016' },
+                    { text: '18-12-2016' },
+                    { text: '$8400' },
+                    { text: 'Delivered' }
+                  ] },{ cells: [
+                    { text: '3699' , link: '#/manager/catering/orders/3699' },
+                    { text: '18-12-2016' },
+                    { text: '18-12-2016' },
+                    { text: '$8400' },
+                    { text: 'Delivered' }
+                  ] }
+                ]}
+
+              />
             </div>
           </div>
         </div>

@@ -1,5 +1,4 @@
 import { createStore, combineReducers } from 'redux'
-import thunk from 'redux-thunk'
 import  publicReducers from './public/Reducers.js'
 import  managerReducers from './manager/Reducers.js'
 import { routerReducer } from 'react-router-redux'

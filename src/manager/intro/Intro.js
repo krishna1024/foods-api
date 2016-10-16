@@ -14,7 +14,12 @@ export default class Intro extends React.Component {
           <div className="col s12" >
             <div className="card">
               <div className="card-content">
-                <span className="card-title">Catering orders</span><a className="btn pink right">View orders</a>
+                <span className="card-title">Catering orders</span>
+                <a
+                  href="#/manager/catering/orders"
+                  className="btn pink right">
+                  View orders
+                </a>
                 <p>I am a very simple card. I am good at containing small bits of information.
                   I am convenient because I require little markup to use effectively.</p>
                 <div className="row" >
