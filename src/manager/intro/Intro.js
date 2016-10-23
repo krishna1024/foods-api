@@ -11,6 +11,30 @@ export default class Intro extends React.Component {
     return (
       <section>
         <div className="row" >
+          <div className="col s6" >
+            <div className="card">
+              <div className="card-content orange-text">
+                <span className="card-title black-text">Cusines</span>
+                <h4>Total <span className="right blue-text" >944</span></h4>
+              </div>
+              <div className="card-action">
+                <a className="pink-text" href="#">Manage</a>
+              </div>
+            </div>
+          </div>
+          <div className="col s6" >
+            <div className="card">
+              <div className="card-content orange-text">
+                <span className="card-title black-text">Catering menus</span>
+                <h4>Manage <span className="right blue-text" >6</span></h4>
+              </div>
+              <div className="card-action">
+                <a className="pink-text" href="#">Manage</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row" >
           <div className="col s12" >
             <div className="card">
               <div className="card-content">
@@ -47,34 +71,6 @@ export default class Intro extends React.Component {
 
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row" >
-          <div className="col s6" >
-            <div className="card blue-grey darken-1">
-              <div className="card-content white-text">
-                <span className="card-title">Card Title</span>
-                <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div className="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-          <div className="col s6" >
-            <div className="card blue-grey darken-1">
-              <div className="card-content white-text">
-                <span className="card-title">Card Title</span>
-                <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div className="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
               </div>
             </div>
           </div>
