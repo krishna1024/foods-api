@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Menu;
-use Illuminate\Auth\Access\Response;
+use App\MenuItemFoods;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response as HTTPResponse;
+use Illuminate\Http\Response as HTTPRequest;
 use App\Http\Requests;
 
-class MenuController extends Controller
+class MenuItemFoodsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +16,7 @@ class MenuController extends Controller
      */
     public function index()
     {
-        return Menu::with('items.choice')->get();
+        //
     }
 
     /**
@@ -27,7 +26,7 @@ class MenuController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**
@@ -36,21 +35,16 @@ class MenuController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request,$menuId,$itemId)
     {
-        $menu = new Menu();
-        $menu->name = $request->input('name');
-        $menu->description = $request->input('description');
-        $menu->save();
-        $response =  new HTTPResponse(
-          array(
-                  'success' => true,
-                  'id' => $menu->id
-                 ),
-              200);
-
-        return $response;
-
+        $food = new MenuItemFoods();
+        $food->menu_items_id = $itemId;
+        $food->foods_id = $request->input('foodId');
+        $food->save();
+        return new HTTPRequest([
+            "success" => true,
+            "id" => $food->id
+        ],200);
     }
 
     /**

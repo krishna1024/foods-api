@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::resource('/api/foods','FoodsController');
 Route::resource('/api/menus','MenuController');
+Route::resource('/api/menus/{id}/items','MenuItemController');
+Route::resource('/api/menus/{menuId}/items/{itemId}/foods','MenuItemFoodsController');

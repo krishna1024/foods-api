@@ -25,6 +25,6 @@ class CreateFoodsMapTable extends Migration
      */
     public function down()
     {
-        Schema::drop('food_map');
+        Schema::drop('foods_map');
     }
 }

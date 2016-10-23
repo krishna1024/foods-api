@@ -17,6 +17,7 @@ class CreateMenuitemsTable extends Migration
           $table->string('food_map_id');
           $table->string('name');
           $table->integer('options');
+          $table->timestamps();
         });
     }
 
