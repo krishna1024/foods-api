@@ -1,3 +1,4 @@
+import caterigReducers from './catering/reducers.js';
 const reducers = {
     loadManager: function (state = {},action) {
         return state;
@@ -6,5 +7,5 @@ const reducers = {
         return state;
     }
 };
-
-export default reducers
+const managerReducers = Object({},caterigReducers,reducers);
+export default managerReducers

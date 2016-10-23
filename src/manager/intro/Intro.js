@@ -1,6 +1,7 @@
 import React from 'react'
 import DialyOrdersChart from "./DialyOrdersChart.js"
 import PendingOrderChart from "./PendingOrdersChart.js"
+import { Link } from 'react-router'
 
 
 import 'c3/c3.css';
@@ -29,7 +30,8 @@ export default class Intro extends React.Component {
                 <h4>Manage <span className="right blue-text" >6</span></h4>
               </div>
               <div className="card-action">
-                <a className="pink-text" href="#">Manage</a>
+                <button className="pink-text btn white"
+                        onClick={ this.props.loadManageMenu } >Manage</button>
               </div>
             </div>
           </div>
